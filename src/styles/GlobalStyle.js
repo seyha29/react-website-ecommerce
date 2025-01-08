@@ -1,7 +1,7 @@
 import { createGlobalStyle } from "styled-components";
 import Screen from "./Screen";
 
-//?  fonts
+// Importing Poppins font
 import "@fontsource/poppins";
 
 const GlobalStyle = createGlobalStyle`
@@ -30,7 +30,6 @@ const GlobalStyle = createGlobalStyle`
   /** styles */
   --transition: 0.3s;
   --radius: 0.35rem;
-
 
   /* font-sizes */
   --fs-900: 9.375rem;
@@ -69,23 +68,22 @@ button {
   cursor: pointer;
 }
 
-/*? typographi */
+/*? typography */
 html {
   font-size: 0.525rem;  //8px
   
   ${Screen.sm`
     font-size: 0.562rem;  //9px
-    `}
-
-${Screen.md`
-  font-size: 0.625rem;  //10px
   `}
 
-${Screen.lg`
-font-size: 0.75rem; //12px
+  ${Screen.md`
+    font-size: 0.625rem;  //10px
+  `}
+
+  ${Screen.lg`
+    font-size: 0.75rem; //12px
   `}
 }
-
 
 /*? global styles */
 
@@ -102,8 +100,9 @@ img {
 
 section {
   width: min(100%, var(--max-width));
-  margin-inline:  auto;
+  margin-inline: auto;
 }
+
 main {
   margin-top: var(--header-height);
 }
@@ -112,23 +111,21 @@ a {
   color: var(--green-color-1);
   transition: var(--transition);
 }
+
 a:hover {
   color: var(--blue-color-1);
 }
+
 /*? global class */
 
 .page {
-  min-height: calc(
-    100vh -
-      (var(--header-height) + var(--footer-height) + var(--breadcrumb-height))
-  );
+  min-height: calc(100vh - (var(--header-height) + var(--footer-height) + var(--breadcrumb-height)));
 }
+
 .page-w-b {
   margin-top: var(--header-height);
   min-height: calc(100vh - (var(--header-height) + var(--footer-height)));
 }
-
-
 `;
 
 export default GlobalStyle;

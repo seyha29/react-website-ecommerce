@@ -12,7 +12,6 @@ import {
 
 import { BsFillGridFill, BsList } from "react-icons/bs";
 
-
 //? base styles
 const bigIcon = css`
   font-size: 2.5rem;
@@ -22,50 +21,50 @@ const mediumIcon = css`
   font-size: 2rem;
 `;
 
-//? styled icons
+//? styled icons with black color
 const BsFillGridFillStyled = styled(BsFillGridFill)`
-  color: var(--blue-color-1);
+  color: black;  /* Changed color to black */
   ${mediumIcon}
 `;
 
 const BsListStyled = styled(BsList)`
-  color: var(--blue-color-1);
+  color: black;  /* Changed color to black */
   ${mediumIcon}
 `;
 
 const FaPlusStyled = styled(FaPlus)`
   ${mediumIcon}
-  color: var(--green-color-1);
+  color: black;  /* Changed color to black */
 `;
 
 const FaTrashStyled = styled(FaTrash)`
   ${mediumIcon}
-  color: var(--red-color-1);
+  color: black;  /* Changed color to black */
 `;
 
 const FaMinusStyled = styled(FaMinus)`
   ${mediumIcon}
-  color: var(--red-color-1);
+  color: black;  /* Changed color to black */
 `;
 
 const FaTimesStyled = styled(FaTimes)`
   ${bigIcon}
-  color: var(--red-color-1);
+  color: black;  /* Changed color to black */
 `;
 
 const FaBarsStyled = styled(FaBars)`
   ${bigIcon}
-  color: var(--blue-color-1);
+  color: black;  /* Changed color to black */
 `;
 
 const FaStoreStyled = styled(FaStore)`
   ${bigIcon}
-  color: var(--blue-color-1);
+  color: black;  /* Changed color to black */
 `;
 
 const FaShoppingCartStyled = styled(FaShoppingCart)`
   ${mediumIcon}
-  color: var(--blue-color-1);
+  color: black;  /* Changed color to black */
 `;
 
 const Icons = {

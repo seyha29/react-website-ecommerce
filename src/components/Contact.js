@@ -39,7 +39,7 @@ const Wrapper = styled.section`
 
   .contact__form {
     border-radius: var(--radius);
-    border: 0.3rem solid var(--green-color-1);
+    border: 0.3rem solid var(--gray-color-1);
     padding: 0.5rem;
     width: min(100%, 400px);
     display: flex;
@@ -52,7 +52,7 @@ const Wrapper = styled.section`
     }
 
     button {
-      background: var(--green-color-1);
+      background: var(--red-color-1);
       border-radius: var(--radius);
       padding: 0.5rem 1rem;
       transition: var(--transition);

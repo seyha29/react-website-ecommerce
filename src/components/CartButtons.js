@@ -36,6 +36,8 @@ const Wrapper = styled.div`
 
   a {
     font-size: var(--fs-500);
+    color: var(--gray-color-1); /* Change cart text color */
+    transition: color var(--transition);
   }
 
   .cart__container {
@@ -48,7 +50,8 @@ const Wrapper = styled.div`
   }
 
   .active {
-    border-color: var(--red-color-1);
+    border-color: var(--gray-color-1); /* Active link border color */
+    color: var(--green-color-1); /* Change active link text color */
   }
   
   .cart-icon {
@@ -61,9 +64,9 @@ const Wrapper = styled.div`
       right: -18px;
       padding: 0.1rem;
       min-width: 2rem;
-      background-color: var(--red-color-1);
+      background-color: var(--black-color-2); /* Change cart icon background color */
       border-radius: 50%;
-      color: var(--blue-color-3);
+      color: var(--blue-color-1); /* Change cart item count text color */
       font-size: 1.2rem;
       display: flex;
       align-items: center;

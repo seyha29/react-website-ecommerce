@@ -50,7 +50,8 @@ const Sidebar = () => {
 const Wrapper = styled.div`
   ${Screen.md`
     display:none;
-`}
+  `}
+  
   .sidebar {
     background: var(--bg-color);
     position: fixed;
@@ -80,16 +81,21 @@ const Wrapper = styled.div`
 
   .sidebar__nav {
     margin-bottom: 4rem;
+
     a {
       display: block;
       padding: 1rem;
       font-size: var(--fs-600);
+      color: black; /* Set text color to black */
+      
       &:hover {
         padding-left: 1.5rem;
+        color: black; /* Hover color also black */
       }
     }
+
     .active {
-      color: var(--red-color-1);
+      color: black; /* Active link color to black */
     }
   }
 

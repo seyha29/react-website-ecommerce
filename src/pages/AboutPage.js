@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-import { Breadcrumb,Typography } from "../components";
+import { Breadcrumb, Typography } from "../components";
 
 import Screen from "../styles/Screen";
 
@@ -38,22 +38,29 @@ const Wrapper = styled.section`
   padding: 1rem;
 
   ${Screen.lg`
-  grid-template-columns: repeat(3,1fr);
-  gap:2rem;
-`}
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  `}
+
   .about__text {
     max-width: 600px;
   }
+  
   .about__img {
     max-width: 700px;
     ${Screen.lg`
-  grid-column: 2/4;
-`}
+      grid-column: 2/4;
+    `}
   }
 
   h1 {
-    color: var(--green-color-1);
+    color: #000000; /* Black color for the heading */
     margin-bottom: 2rem;
+  }
+
+  p {
+    color: #333333; /* Dark gray color for paragraph text */
+    line-height: 1.6;
   }
 `;
 

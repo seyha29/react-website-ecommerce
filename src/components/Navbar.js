@@ -69,14 +69,14 @@ const Header = styled.header`
   .header__btn {
     ${Screen.md`
       display:none;
-      `}
+    `}
   }
 
   .header__nav {
     display: none;
     ${Screen.md`
       display:inline-block;
-      `}
+    `}
 
     ul {
       display: inline-flex;
@@ -86,11 +86,13 @@ const Header = styled.header`
         display: inline-block;
         font-size: var(--fs-500);
         padding: 0.2rem;
+        color: black; /* Text color to black */
         border-bottom: 0.3rem solid transparent;
       }
 
       .active {
-        border-bottom-color: var(--red-color-1);
+        border-bottom-color: var(--gray-color-1);
+        color: black; /* Active link color to black */
       }
     }
   }
@@ -99,7 +101,7 @@ const Header = styled.header`
     display: none;
     ${Screen.md`
       display:inline-block;
-      `}
+    `}
   }
 `;
 

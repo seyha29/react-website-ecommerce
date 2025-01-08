@@ -95,7 +95,7 @@ const Wrapper = styled.div`
   }
 
   .sort__line {
-    background-color: var(--red-color-1);
+    background-color: var(--blue-color-1);
     height: 0.3rem;
     width: 30%;
     display: none;

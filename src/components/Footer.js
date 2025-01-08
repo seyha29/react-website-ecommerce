@@ -8,7 +8,7 @@ const Footer = () => {
     <FooterWrapper>
       <Typography.P>
         &copy;{new Date().getFullYear()} by
-        <a href='https://github.com/kamalheydari'> kamal heydari</a>, All rights
+        <a href='https://github.com/seyha29'> :fake api store@2024</a>, All rights
         reserved
       </Typography.P>
     </FooterWrapper>
@@ -16,7 +16,7 @@ const Footer = () => {
 };
 
 const FooterWrapper = styled.footer`
-  background: var(--green-color-1);
+  background: #808080; /* Direct gray color code */
   height: var(--footer-height);
   padding: 3rem;
   display: flex;
